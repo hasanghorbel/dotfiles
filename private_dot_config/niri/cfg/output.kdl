@@ -1,0 +1,8 @@
+// ────────────── Output Configuration ──────────────
+// Find more information on the wiki:
+// https://niri-wm.github.io/niri/Configuration:-Outputs
+
+/- output "DP-1" {
+    mode "1920x1080@120.030" // Set resolution and refresh rate
+    scale 1 // No scaling (use 2 for HiDPI)
+}

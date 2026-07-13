@@ -1,0 +1,3 @@
+// ────────────── Startup Applications ──────────────
+
+spawn-at-startup "noctalia"
