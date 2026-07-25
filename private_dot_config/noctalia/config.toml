@@ -7,6 +7,8 @@ center = [ "group:g3", "workspaces" ]
 end = [ "group:g4", "session" ]
 margin_edge = 10
 margin_ends = 25
+margin_opposite_edge = 5
+padding = 12
 position = "left"
 radius = 16
 scale = 1.2500000111758709
@@ -42,7 +44,7 @@ widget_spacing = 10
     enabled = true
     fill = "surface_variant"
     id = "g4"
-    members = [ "temp", "cpu", "network_rx", "network_tx" ]
+    members = [ "temp", "cpu", "ram", "network_rx", "network_tx" ]
     opacity = 1.0
     padding = 6.0
 
@@ -104,11 +106,20 @@ path = "/home/archlinux/Pictures/Wallpapers/wallhaven-jey8kq_1920x1080.png"
 [wallpaper.monitors.eDP-1]
 path = "/home/archlinux/Pictures/Wallpapers/wallhaven-jey8kq_1920x1080.png"
 
+[[wallpaper.favorite]]
+palette_source = "wallpaper"
+path = "/home/archlinux/Pictures/Wallpapers/wallhaven-jey8kq_1920x1080.png"
+theme_mode = "dark"
+wallpaper_scheme = "soft"
+
 [widget.bluetooth]
 enabled = false
 
 [widget.brightness]
 enabled = false
+
+[widget.clock]
+timezone = "Africa/Tunis"
 
 [widget.control-center]
 enabled = false
