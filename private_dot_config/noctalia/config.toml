@@ -5,18 +5,23 @@ ui_scale = 1.2500000111758709
 capsule = true
 center = [ "group:g3", "workspaces" ]
 end = [ "group:g4", "session" ]
-margin_edge = 10
-margin_ends = 25
-margin_opposite_edge = 5
+margin_edge = 0
+margin_ends = 0
+margin_opposite_edge = 0
 padding = 12
-position = "left"
-radius = 16
-scale = 1.2500000111758709
+position = "top"
+radius = 0
+radius_bottom_left = 20
+radius_bottom_right = 19
+scale = 1.2000000104308128
 start = [ "launcher", "wallpaper", "notifications" ]
-thickness = 45
+thickness = 30
 widget_spacing = 10
 
     [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border_width = 1.0
     enabled = true
     fill = "surface_variant"
     id = "g1"
@@ -25,6 +30,9 @@ widget_spacing = 10
     padding = 6.0
 
     [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border_width = 1.0
     enabled = true
     fill = "surface_variant"
     id = "g2"
@@ -33,6 +41,9 @@ widget_spacing = 10
     padding = 8.0
 
     [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border_width = 1.0
     enabled = true
     fill = "surface_variant"
     id = "g3"
@@ -41,12 +52,18 @@ widget_spacing = 10
     padding = 6.0
 
     [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    border_width = 1.0
     enabled = true
     fill = "surface_variant"
     id = "g4"
-    members = [ "temp", "cpu", "ram", "network_rx", "network_tx" ]
+    members = [ "temp", "ram", "cpu", "network_rx", "network_tx" ]
     opacity = 1.0
     padding = 6.0
+
+[location]
+address = "Sfax, Tunisia"
 
 [lockscreen_widgets]
 enabled = false
@@ -85,9 +102,12 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
         show_unlock_hint = true
         show_weather = true
 
+[nightlight]
+enabled = true
+
 [shell]
 corner_radius_scale = 1.5000000223517418
-font_family = "Adwaita Sans"
+font_family = "Noto Sans"
 
     [shell.launcher]
     app_grid = true
@@ -98,20 +118,28 @@ font_family = "Adwaita Sans"
 
 [theme]
 builtin = "Catppuccin"
+community_palette = "Oxocarbon"
+mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "soft"
 
     [theme.templates]
     builtin_ids = [ "alacritty", "btop", "kitty", "niri" ]
 
-[wallpaper.default]
-path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
+[wallpaper]
+directory = "/home/usr/Pictures/Wallpapers"
 
-[wallpaper.last]
-path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
+    [wallpaper.automation]
+    enabled = true
 
-[wallpaper.monitors.eDP-1]
-path = "/home/archlinux/Pictures/Wallpapers/wallhaven-jey8kq_1920x1080.png"
+    [wallpaper.default]
+    path = "/home/usr/Pictures/Wallpapers/a_foggy_forest_with_trees_and_bushes.png"
+
+    [wallpaper.last]
+    path = "/home/usr/Pictures/Wallpapers/a_foggy_forest_with_trees_and_bushes.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/usr/Pictures/Wallpapers/a_foggy_forest_with_trees_and_bushes.png"
 
 [widget.bluetooth]
 enabled = false
@@ -135,9 +163,11 @@ format = "{:%b %d }"
 enabled = false
 
 [widget.network_rx]
+enabled = false
 scale = 0.90000000000000013
 
 [widget.network_tx]
+enabled = false
 scale = 0.90000000000000013
 
 [widget.session]
@@ -151,6 +181,7 @@ type = "spacer"
 hide_empty_workspaces = true
 
 [widget.temp]
+enabled = false
 scale = 0.90000000000000013
 
 [widget.workspaces]
