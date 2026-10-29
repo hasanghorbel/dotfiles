@@ -1,0 +1,15 @@
+require("options")
+require("keymaps")
+
+require("plugins.theme")
+require("plugins.telescope")
+require("plugins.treesitter")
+require("plugins.completion")
+require("plugins.lsp")
+require("plugins.oil")
+require("plugins.gitsigns")
+require("plugins.lualine")
+require("plugins.which-key")
+require("plugins.autopairs")
+
+require("scripts.compile_run")
